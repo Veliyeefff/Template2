@@ -1,0 +1,50 @@
+section{
+    @include Center();
+    justify-content: center;
+    flex-direction: column;
+    margin: 5% 0px;
+
+    .poster{
+        @include Center();
+        justify-content: center;
+        width: 60%;
+        gap: 150px;
+        margin-bottom: 60px;
+    .poster2{
+        flex-direction: row-reverse;
+    }
+
+        .text{
+            .head{
+                font-size: 3rem;
+                font-weight: 200;
+                margin-bottom: 5px;
+            }
+            .texts{
+                font-size: 0.9rem;
+                line-height: 20px;
+            }
+        }
+
+        .image{
+            img{
+                width: 492px;
+                height: 492px;
+                border-radius: 100% ;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .poster{
+        @include Center();
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        img{
+            width: 100%;
+            border-radius: 100% ;
+        }
+    }
+}

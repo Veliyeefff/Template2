@@ -1,0 +1,43 @@
+nav{
+    @include Center();
+    justify-content: space-between;
+    padding: 20px 15%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    top:0;
+
+    h3{
+        color: $bg-light;
+        cursor: pointer;
+        font-size: .9rem;
+    }
+
+    ul{
+        @include Center();
+        justify-content: center;
+        list-style: none;
+        font-size: .9rem;
+        li{
+            margin-left: 15px;
+            a{
+                text-decoration: none;
+                color: $bg-light;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    nav{
+        @include Center();
+        justify-content: center;
+        flex-direction: column;
+        h3{
+            color: $bg-light;
+            cursor: pointer;
+            font-size: .9rem;
+        }
+    }
+  }

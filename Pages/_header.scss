@@ -1,0 +1,22 @@
+header{
+    background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+    text-align: center;
+    color: $bg-light;
+    padding-top: 10%;
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        margin-top: 25px;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    
+}
